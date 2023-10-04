@@ -21,7 +21,12 @@ iii.	What variable(s) should be removed from the input data because they are nei
 
 
 b.	Compiling, Training, and Evaluating the Model
-i.	How many neurons, layers, and activation functions did you select for your neural network model, and why? – There are 2 hidden layers. Layer 1 has 80 neurons and layer 2 has 30 neurons. Activation functions for hidden layers is ‘relu’ and for output later is ‘sigmoid’. Reason to choose the model: I was just guessing the neurons.
+i.	How many neurons, layers, and activation functions did you select for your neural network model, and why? – There are 2 hidden layers. Layer 1 has 80 neurons and layer 2 has 30 neurons.
+<img width="752" alt="image" src="https://github.com/tnguy25/deep-learning-challenge/assets/125770693/eab82084-5cce-44e8-b137-58089cdeb0c9">
+
+Activation functions for hidden layers is ‘relu’ and for output later is ‘sigmoid’. Reason to choose the model: I was just guessing the neurons.
 ii.	Were you able to achieve the target model performance? – I was unable to achieve 75% accuracy.
+<img width="687" alt="image" src="https://github.com/tnguy25/deep-learning-challenge/assets/125770693/6b760d36-d183-4348-b485-81e85b843f94">
+
 iii.	What steps did you take in your attempts to increase model performance? – I removed extra features ‘STATUS’, ‘SPECIAL_CONSIDERATIONS’, and ‘ASK_AMT’. For attempt number 1, I ran the code again and get the accuracy of 72.43%. Then, for attempt number 2, I changed the activation function of the hidden layers to “tanh” and output function to “relu”. For the last attempt, I add additional layer with 30 neurons. Activation functions for all hidden layer is “tanh” and output layer is “relu”.
 4.	Summary: Overall, the deep learning model is approximately 73%. Additional layers with more neurons can be added to improve the result. Moreover, we can use the sequential model with keras-tuner library with hyperparameter option. In this case, we can allow kerastuner to decide activation functions and number of neurons to use in the hidden layers.
